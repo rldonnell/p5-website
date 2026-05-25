@@ -3,6 +3,7 @@ import Link from "next/link";
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Approach", href: "/#approach" },
   { label: "What we do", href: "/#what-we-do" },
+  { label: "Toolkit", href: "/the-id-suite/" },
   { label: "Who we work with", href: "/markets/" },
   { label: "Plan of Record", href: "/#plan-of-record" },
   { label: "Contact", href: "/#contact" },

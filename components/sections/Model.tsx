@@ -38,6 +38,13 @@ export default function Model() {
       <p className="mt-16 md:mt-20 text-taupe text-[15px] md:text-[16px] max-w-[60ch]">
         What this isn&apos;t. P5 is not a fractional CMO. P5 is not an all-in-one agency. P5 is not another vendor for you to manage.
       </p>
+
+      <a
+        href="/the-id-suite/"
+        className="inline-block mt-8 text-[12px] tracking-cta uppercase text-taupe hover:text-ink transition-colors duration-150 border-b border-transparent hover:border-taupe pb-0.5"
+      >
+        See the toolkit →
+      </a>
     </section>
   );
 }
