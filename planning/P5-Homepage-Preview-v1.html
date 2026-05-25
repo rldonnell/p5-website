@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>P5 — Homepage Preview v1</title>
+<meta name="description" content="The lead marketing agency for owner-operated aesthetic medicine practices." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!--
+  Note on type: the spec calls for GT Sectra (display) + Inter (body).
+  GT Sectra is a commercial Grilli Type face and is NOT on Google Fonts.
+  For this preview we substitute Fraunces, the closest free transitional
+  serif on Google Fonts. The production build can use Fraunces as-is,
+  or swap to GT Sectra later by replacing the font import only.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bone: #F4F0E8;
+    --bone-deep: #EFEBE2;
+    --ink: #14110D;
+    --forest: #3B4E36;
+    --forest-hover: #2F3F2B;
+    --taupe: #6B6358;
+    --hairline: #D7D0C3;
+
+    --serif: 'Fraunces', 'GT Sectra', 'Tiempos Headline', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+    --content: 1240px;
+    --pad-x: clamp(24px, 5vw, 64px);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { opacity: 0.7; }
+  button { font-family: inherit; cursor: pointer; }
+
+  /* ---------- Layout primitives ---------- */
+  .container {
+    max-width: var(--content);
+    margin: 0 auto;
+    padding-left: var(--pad-x);
+    padding-right: var(--pad-x);
+  }
+
+  .col-8 { max-width: 760px; }
+  .col-6 { max-width: 580px; }
+
+  section {
+    padding-top: clamp(80px, 12vw, 144px);
+    padding-bottom: clamp(80px, 12vw, 144px);
+  }
+
+  /* ---------- Type primitives ---------- */
+  .display {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .hero-headline {
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 1.05;
+  }
+
+  .section-head {
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.1;
+  }
+
+  .lede {
+    font-size: clamp(19px, 1.8vw, 23px);
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .body-prose p {
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0 0 1.2em 0;
+    max-width: 60ch;
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    margin: 0 0 32px 0;
+  }
+
+  .billboard {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(28px, 3.4vw, 40px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    border-bottom: 1px solid var(--hairline);
+    background: var(--bone);
+  }
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+  }
+  .header-cta {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-block;
+    background: var(--forest);
+    color: var(--bone);
+    padding: 16px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    transition: background 120ms ease;
+  }
+  .btn:hover { background: var(--forest-hover); opacity: 1; }
+
+  .quiet-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 120ms ease, color 120ms ease;
+  }
+  .quiet-link:hover { color: var(--ink); border-bottom-color: var(--taupe); opacity: 1; }
+
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+    margin-top: 44px;
+  }
+
+  /* ---------- Section 1: Hero ---------- */
+  .hero {
+    padding-top: clamp(80px, 14vw, 160px);
+    padding-bottom: clamp(80px, 14vw, 160px);
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero__block { max-width: 880px; }
+  .hero__sub {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(20px, 2.1vw, 26px);
+    line-height: 1.35;
+    color: var(--ink);
+    margin: 32px 0 0 0;
+    max-width: 720px;
+    letter-spacing: -0.005em;
+  }
+
+  /* ---------- Section 3: Model ---------- */
+  .model__body p { margin-bottom: 1.4em; }
+
+  /* ---------- Section 4: In practice ---------- */
+  .practice__list { margin-top: 64px; }
+  .practice-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 48px;
+    align-items: baseline;
+    padding: 56px 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .practice-item:last-child { border-bottom: 1px solid var(--hairline); }
+  .practice-item__num {
+    font-family: var(--serif);
+    font-weight: 500;
+    color: var(--forest);
+    font-size: clamp(64px, 8vw, 112px);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+  }
+  .practice-item__head {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(22px, 2.2vw, 28px);
+    line-height: 1.2;
+    margin: 0 0 14px 0;
+  }
+  .practice-item__body {
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 56ch;
+  }
+
+  /* ---------- Section 5: Proof / report opt-in ---------- */
+  .proof {
+    background: var(--bone-deep);
+  }
+  .form-row {
+    display: flex;
+    gap: 0;
+    margin-top: 36px;
+    max-width: 520px;
+    border: 1px solid var(--taupe);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .form-row input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 16px 18px;
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--ink);
+    outline: none;
+  }
+  .form-row input::placeholder { color: var(--taupe); }
+  .form-row button {
+    background: var(--forest);
+    color: var(--bone);
+    border: none;
+    padding: 0 24px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .form-row button:hover { background: var(--forest-hover); }
+
+  /* ---------- Section 6: Plan of Record ---------- */
+  .por {
+    padding-top: clamp(120px, 16vw, 200px);
+    padding-bottom: clamp(120px, 16vw, 200px);
+  }
+  .por__rule {
+    width: 56px;
+    height: 1px;
+    background: var(--forest);
+    margin-bottom: 32px;
+  }
+  .por__head {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.05;
+    margin: 0 0 32px 0;
+  }
+
+  /* ---------- Section 7: Manifesto ---------- */
+  .manifesto { text-align: left; }
+  .manifesto__body {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 56px 0;
+  }
+  .manifesto__billboard {
+    max-width: 720px;
+  }
+
+  /* ---------- Section 8: Footer ---------- */
+  .site-footer {
+    border-top: 1px solid var(--hairline);
+    padding-top: 96px;
+    padding-bottom: 64px;
+    background: var(--bone-deep);
+  }
+  .footer-line {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(20px, 2vw, 24px);
+    line-height: 1.3;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+  }
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    padding-top: 48px;
+    border-top: 1px solid var(--hairline);
+  }
+  .footer-contact a {
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+  .footer-legal {
+    font-size: 13px;
+    color: var(--taupe);
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- Mobile adjustments ---------- */
+  @media (max-width: 720px) {
+    .practice-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 40px 0;
+    }
+    .practice-item__num { font-size: 64px; }
+    .hero { min-height: 0; padding-top: 80px; padding-bottom: 80px; }
+    .cta-row { gap: 18px; margin-top: 32px; }
+    .form-row { flex-direction: column; }
+    .form-row button { padding: 14px 18px; }
+    .site-header__inner { padding-top: 18px; padding-bottom: 18px; }
+    .header-cta { font-size: 12px; }
+    .wordmark { font-size: 20px; }
+  }
+
+  /* ---------- Preview chrome (toggle bar so this is obviously a working preview) ---------- */
+  .preview-bar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--ink);
+    color: var(--bone);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .preview-bar__label { opacity: 0.7; }
+  .preview-bar__group { display: flex; align-items: center; gap: 10px; }
+  .swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--bone);
+    border: 1px solid rgba(244, 240, 232, 0.25);
+    padding: 6px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    font: inherit;
+    transition: border-color 120ms ease, background 120ms ease;
+  }
+  .swatch:hover { border-color: rgba(244, 240, 232, 0.6); }
+  .swatch[aria-pressed="true"] {
+    border-color: var(--bone);
+    background: rgba(244, 240, 232, 0.08);
+  }
+  .swatch__chip {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(244, 240, 232, 0.3);
+  }
+  @media (max-width: 720px) {
+    .preview-bar { font-size: 10px; padding: 8px 12px; }
+    .swatch { padding: 5px 8px; }
+    .preview-bar__label { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-bar">
+  <span class="preview-bar__label">Preview · P5 homepage v1 · background:</span>
+  <div class="preview-bar__group">
+    <button class="swatch" type="button" data-bg="#FFFFFF" data-deep="#F4F4F4" aria-pressed="false">
+      <span class="swatch__chip" style="background:#FFFFFF"></span>Pure white
+    </button>
+    <button class="swatch" type="button" data-bg="#FAFAF6" data-deep="#F0F0EC" aria-pressed="true">
+      <span class="swatch__chip" style="background:#FAFAF6"></span>Soft white
+    </button>
+    <button class="swatch" type="button" data-bg="#F6F6F7" data-deep="#EBEBEC" aria-pressed="false">
+      <span class="swatch__chip" style="background:#F6F6F7"></span>Cool near-white
+    </button>
+    <button class="swatch" type="button" data-bg="#F4F0E8" data-deep="#EFEBE2" aria-pressed="false">
+      <span class="swatch__chip" style="background:#F4F0E8"></span>Bone (original)
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var swatches = document.querySelectorAll('.swatch');
+    // Default to "Soft white" on load
+    root.style.setProperty('--bone', '#FAFAF6');
+    root.style.setProperty('--bone-deep', '#F0F0EC');
+    swatches.forEach(function (sw) {
+      sw.addEventListener('click', function () {
+        root.style.setProperty('--bone', sw.dataset.bg);
+        root.style.setProperty('--bone-deep', sw.dataset.deep);
+        swatches.forEach(function (s) { s.setAttribute('aria-pressed', 'false'); });
+        sw.setAttribute('aria-pressed', 'true');
+      });
+    });
+  })();
+</script>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="wordmark" href="#">P5</a>
+    <a class="header-cta" href="#por">Begin a Plan of Record</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ Section 1: Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__block">
+        <p class="eyebrow">The lead marketing agency for owner-operated high-value service businesses</p>
+        <h1 class="display hero-headline">You're the founder. You're the owner. Somehow you're also the marketing quarterback.</h1>
+        <p class="hero__sub">We build the ideal customer profile (ICP). We coordinate paid, ads, PR, and content against one plan. We bridge the work to sales and measure the whole program with visitor identification and attribution.</p>
+        <div class="cta-row">
+          <a class="btn" href="#por">Begin a Plan of Record</a>
+          <a class="quiet-link" href="#model">How we work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 2: The problem named ============ -->
+  <section id="problem">
+    <div class="container">
+      <p class="eyebrow">01 / The problem</p>
+      <h2 class="display section-head col-8">The problem isn't your marketing. It's that nobody is holding the plan.</h2>
+      <div class="body-prose col-6" style="margin-top: 40px;">
+        <p>Most practices end up with five or six vendors. A PR firm. A paid media buyer. A web developer. A social agency. Maybe an SEO consultant. None of them talk to each other.</p>
+        <p>When no one is holding the plan, the practice owner becomes the strategist by default. Growth then ceilings out at the owner's personal bandwidth. That is the structural problem, and it doesn't have a tactical fix.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 3: The model ============ -->
+  <section id="model">
+    <div class="container">
+      <p class="eyebrow">02 / The model</p>
+      <h2 class="display section-head col-8">We build the ICP. We write the plan. We measure the whole program.</h2>
+      <div class="body-prose col-6 model__body" style="margin-top: 40px;">
+        <p>The first work for every business is the ICP. Who your best customers actually are, where they are, and what they need to see before they call. Most owner-operators have never had this done with rigor.</p>
+        <p>From the ICP we write the plan. A working document, not a deck. It ties together paid media, Google Ads, public relations, web, and the SEO and GEO content P5 ships. One plan that every vendor in the stack works against.</p>
+        <p>Proprietary research tooling, built in-house, finds what is actually trending in the business's market and worth writing for. The content that follows is built for SEO and GEO. Sometimes P5 ships it. Sometimes your team does. The plan is the through line either way.</p>
+        <p>Measurement is anonymous website visitor identification and traffic attribution, run continuously. The read tells us which channels are doing the work and which aren't, and when to change direction. Not a separate product. The layer underneath every decision.</p>
+        <p>P5 also runs the bridge from marketing to sales. Visitor identification and attribution close the loop with the business's front-line conversion process. Which prospects called, which booked, which became revenue. That feedback rewrites the plan.</p>
+        <p>What this isn't. P5 is not a fractional CMO. P5 is not an all-in-one agency. P5 is not another vendor for you to manage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 4: In practice ============ -->
+  <section id="practice">
+    <div class="container">
+      <p class="eyebrow">03 / In practice</p>
+      <h2 class="display section-head col-8">What P5 actually does for an owner-operator</h2>
+
+      <div class="practice__list">
+        <div class="practice-item">
+          <div class="practice-item__num">01</div>
+          <div>
+            <h3 class="practice-item__head">The ICP, defined.</h3>
+            <p class="practice-item__body">Who your best customers really are, defined with the rigor most owner-operators have never given it. Demographics, motivations, objections, and the language they use when they search. The foundation everything else is built against.</p>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-item__num">02</div>
+          <div>
+            <h3 class="practice-item__head">Research-driven SEO and GEO content.</h3>
+            <p class="practice-item__body">Proprietary tooling, built in-house, finds what is actually trending in the business's market and worth writing for. The content that follows is built to rank in Google, surface in ChatGPT and Perplexity, and read as a credible voice. P5 hands it off or ships it, whichever serves the plan.</p>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-item__num">03</div>
+          <div>
+            <h3 class="practice-item__head">Vendor coordination across the stack.</h3>
+            <p class="practice-item__body">Paid media, Google Ads, public relations, and web all work against the same plan. P5 holds the document, runs the cadence, and keeps the priorities aligned. You have one accountable agency at the head of the table, not five disconnected ones.</p>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-item__num">04</div>
+          <div>
+            <h3 class="practice-item__head">Measurement and the feedback loop from sales.</h3>
+            <p class="practice-item__body">Anonymous website visitor identification and traffic attribution, run continuously. P5 closes the loop with the business's front-line conversion process so the plan can see which prospects called, which booked, and which became revenue. That read feeds back in, and the plan changes because the sales data changed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 5: Proof / report opt-in ============ -->
+  <section class="proof">
+    <div class="container">
+      <p class="eyebrow">04 / Forthcoming</p>
+      <h2 class="display section-head col-8">The State of High-Ticket Service Marketing 2026</h2>
+      <div class="body-prose col-6" style="margin-top: 32px;">
+        <p>An annual read on what is actually working for owner-operators of high-value service businesses. Pulled from search behavior, on-site identification, and measurement across the businesses P5 works with: cosmetic surgery, wedding venues, luxury contractors, legal, specialty medical and dental, restaurant groups. Free to qualified owners. Released this fall.</p>
+      </div>
+      <form class="form-row" onsubmit="event.preventDefault();" aria-label="Report opt-in">
+        <input type="email" placeholder="Business email" aria-label="Business email" />
+        <button type="submit">Send me the report</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Section 6: Plan of Record offer ============ -->
+  <section class="por" id="por">
+    <div class="container">
+      <div class="por__rule"></div>
+      <p class="eyebrow">05 / The first step</p>
+      <h2 class="display por__head col-8">The Plan of Record</h2>
+      <div class="body-prose col-6">
+        <p>A standalone paid diagnostic that produces the practice's written marketing plan. Independent of any ongoing engagement. The plan is the deliverable, and you own it whether or not you continue with P5.</p>
+        <p>What it includes. The ICP, defined for the business. A research read using P5's proprietary tooling. A 90-day priority order that ties paid media, Google Ads, public relations, web, and SEO and GEO content together. The measurement setup using anonymous visitor identification and traffic attribution, including the feedback loop from the business's front-line conversion process. The written plan, formatted for the owner and leadership team.</p>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record">Begin a Plan of Record</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 7: Quiet manifesto ============ -->
+  <section class="manifesto">
+    <div class="container">
+      <div class="body-prose">
+        <p class="manifesto__body">P5 was built because too many owner-operators were carrying their own marketing plan and calling that "having an agency." That isn't an agency. That is a vendor list with a project manager who happens to also own the business. P5 is the lead agency for owner-operators who want one accountable plan instead of six disconnected vendors.</p>
+      </div>
+      <p class="billboard manifesto__billboard">One plan. One agency. One accountable team.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Section 8: Footer ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-line">The lead marketing agency for owner-operators of high-value service businesses.</p>
+    <div class="footer-row">
+      <div class="footer-contact">
+        <a href="mailto:rdonnell@p5marketing.com">rdonnell@p5marketing.com</a>
+        &nbsp;&nbsp;<span style="color: var(--taupe);">Bedford, Texas</span>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; 2026 P5 Marketing</span>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Do Not Sell</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
