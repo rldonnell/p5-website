@@ -42,16 +42,6 @@ const TEAM: TeamMember[] = [
     role: "Client Success & Onboarding",
     bio: "Adrianne is the first person new clients work with. She handles onboarding, CRM setup, and ongoing communication to make sure every client knows exactly what is happening and what is next.",
   },
-  {
-    name: "Stephie Althouse, PhD",
-    role: "Strategic Advisor · Organizational Clarity & Growth",
-    bio: "Dr. Stephie advises P5 and its clients on organizational clarity, strategic positioning, and scalable growth frameworks. She helps leadership teams align their messaging, structure, and go-to-market strategy so that every part of the business communicates with purpose and moves in the same direction.",
-  },
-  {
-    name: "Joely Gardner, PhD",
-    role: "Strategic Advisor · Healthcare Marketing",
-    bio: "Dr. Joely brings deep expertise in web usability and regulatory strategy, backed by prior experience at Microsoft, Meta, and Oracle. She advises on messaging frameworks for medical device, pharmaceutical, and aesthetic practices.",
-  },
 ];
 
 export default function AboutPage() {

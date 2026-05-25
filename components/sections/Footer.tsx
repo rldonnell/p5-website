@@ -50,12 +50,20 @@ export default function Footer() {
           <p className="text-taupe text-[12px] tracking-[0.02em] flex flex-wrap gap-x-3 gap-y-1">
             <span>&copy; {year} P5 Marketing</span>
             <span aria-hidden="true">·</span>
-            <Link href="/privacy" className="hover:text-ink transition-colors duration-150">
-              Privacy
+            <Link href="/privacy-policy/" className="hover:text-ink transition-colors duration-150">
+              Privacy Policy
             </Link>
             <span aria-hidden="true">·</span>
-            <Link href="/terms" className="hover:text-ink transition-colors duration-150">
-              Terms
+            <Link href="/terms-and-conditions/" className="hover:text-ink transition-colors duration-150">
+              Terms and Conditions
+            </Link>
+            <span aria-hidden="true">·</span>
+            <Link href="/terms-of-service/" className="hover:text-ink transition-colors duration-150">
+              Terms of Service
+            </Link>
+            <span aria-hidden="true">·</span>
+            <Link href="/do-not-sell/" className="hover:text-ink transition-colors duration-150">
+              Do Not Sell My Info
             </Link>
           </p>
         </div>

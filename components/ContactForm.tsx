@@ -212,7 +212,7 @@ export default function ContactForm() {
           <span className="text-ink text-[14px] md:text-[15px] leading-relaxed">
             I agree to receive <strong>non-marketing</strong> emails, calls, and text messages from P5 Marketing related to my inquiry — scheduling, account servicing, and other transactional communications. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. See our{" "}
             <a
-              href="/privacy/"
+              href="/privacy-policy/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-forest hover:text-ink underline underline-offset-4 transition-colors duration-150"
@@ -221,7 +221,7 @@ export default function ContactForm() {
             </a>{" "}
             and{" "}
             <a
-              href="/terms/"
+              href="/terms-and-conditions/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-forest hover:text-ink underline underline-offset-4 transition-colors duration-150"
@@ -248,7 +248,7 @@ export default function ContactForm() {
           <span className="text-ink text-[14px] md:text-[15px] leading-relaxed">
             I agree to receive <strong>marketing</strong> emails, calls, and text messages from P5 Marketing, including promotions, newsletters, offers, and updates. Consent is not a condition of purchase. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. See our{" "}
             <a
-              href="/privacy/"
+              href="/privacy-policy/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-forest hover:text-ink underline underline-offset-4 transition-colors duration-150"
@@ -257,7 +257,7 @@ export default function ContactForm() {
             </a>{" "}
             and{" "}
             <a
-              href="/terms/"
+              href="/terms-and-conditions/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-forest hover:text-ink underline underline-offset-4 transition-colors duration-150"
@@ -283,11 +283,11 @@ export default function ContactForm() {
       )}
 
       <p className="text-taupe text-[12px] tracking-[0.02em]">
-        <a href="/privacy/" className="text-forest hover:text-ink transition-colors duration-150">
+        <a href="/privacy-policy/" className="text-forest hover:text-ink transition-colors duration-150">
           Privacy Policy
         </a>
         <span className="mx-2">·</span>
-        <a href="/terms/" className="text-forest hover:text-ink transition-colors duration-150">
+        <a href="/terms-and-conditions/" className="text-forest hover:text-ink transition-colors duration-150">
           Terms
         </a>
       </p>
