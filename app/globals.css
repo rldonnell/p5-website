@@ -12,16 +12,16 @@ body {
   text-rendering: optimizeLegibility;
 
   /* Engraved-paper feel:
-     Cross-hatched 45-degree hairlines on a 14px grid. Reads as fine etched
-     line work (think currency / stock certificate texture). Tiles
-     seamlessly. Layers on top of the bg-bone background-color set by the
-     body's Tailwind class.
+     Cross-hatched 45-degree hairlines on a 14px grid at 7% ink opacity.
+     Subtle paper texture; reads as a soft tooth from normal viewing
+     distance. Tiles seamlessly. Layers on top of the bg-bone
+     background-color set by the body's Tailwind class.
 
-     To dial intensity: stroke-opacity (currently 0.20) and stroke-width
-     (currently 0.6) are the levers. Drop opacity to 0.10 for quieter
-     texture; push to 0.28 for more obvious paper-tooth. Encoded SVG fits
-     in a data URI so no external request, no extra file. */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M0 14 L14 0 M0 0 L14 14' stroke='%2314110D' stroke-opacity='0.20' stroke-width='0.6' fill='none'/%3E%3C/svg%3E");
+     To dial intensity: stroke-opacity (currently 0.07) and stroke-width
+     (currently 0.6) are the levers. Push to 0.10–0.12 for more visible
+     texture; drop to 0.04 for nearly invisible. Encoded SVG fits in a
+     data URI so no external request, no extra file. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M0 14 L14 0 M0 0 L14 14' stroke='%2314110D' stroke-opacity='0.07' stroke-width='0.6' fill='none'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -46,7 +46,7 @@ body {
      top-edge highlight. Increase the alpha values for more dimensional
      pop, decrease for subtler letterpress feel. */
 .btn-engraved {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6 L6 0 M0 0 L6 6' stroke='%2314110D' stroke-opacity='0.22' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6 L6 0 M0 0 L6 6' stroke='%2314110D' stroke-opacity='0.20' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
   background-repeat: repeat;
   text-shadow:
     0 1px 0 rgba(20, 17, 13, 0.45),
