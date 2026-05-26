@@ -295,7 +295,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="inline-flex items-center justify-center border border-forest bg-forest text-bone px-7 py-3.5 text-[14px] tracking-cta uppercase font-medium transition-colors duration-150 hover:bg-ink hover:border-ink disabled:opacity-60 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center border border-forest bg-forest btn-engraved text-bone px-7 py-3.5 text-[14px] tracking-cta uppercase font-medium transition-colors duration-150 hover:bg-ink hover:border-ink disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {submitting ? "Sending…" : "Start the Conversation →"}
       </button>

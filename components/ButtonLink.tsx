@@ -11,7 +11,7 @@ interface ButtonLinkProps {
 
 const VARIANTS: Record<Variant, string> = {
   forest:
-    "bg-forest text-bone hover:bg-ink hover:text-bone border-forest hover:border-ink",
+    "bg-forest btn-engraved text-bone hover:bg-ink hover:text-bone border-forest hover:border-ink",
   ink: "bg-transparent text-ink hover:bg-ink hover:text-bone border-ink",
 };
 

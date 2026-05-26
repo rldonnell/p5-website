@@ -80,7 +80,7 @@ export default function ReportSignup({
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-forest text-bone border border-forest px-6 py-3 text-[13px] tracking-cta uppercase font-medium hover:bg-ink hover:border-ink transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="bg-forest btn-engraved text-bone border border-forest px-6 py-3 text-[13px] tracking-cta uppercase font-medium hover:bg-ink hover:border-ink transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "loading" ? "Sending" : ctaLabel}
       </button>
