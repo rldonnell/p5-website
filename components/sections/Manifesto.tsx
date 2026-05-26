@@ -13,7 +13,7 @@ export default function Manifesto() {
           id="manifesto-heading"
           className="text-ink leading-relaxed text-[18px] md:text-[20px] mb-16 md:mb-20"
         >
-          P5 was built because too many owner-operators were carrying their own marketing plan and calling that &ldquo;having an agency.&rdquo; That isn&apos;t an agency. That is a vendor list with a project manager who happens to also own the business. P5 is the lead agency for owner-operators who want one accountable plan instead of six disconnected vendors.
+          P5 was built because too many owner-operators were carrying their own marketing plan and calling that &ldquo;having an agency.&rdquo; That isn&apos;t an agency. That is a vendor list with a project manager who happens to also own the business. P5 is the primary marketing agency for owner-operators who want one accountable plan instead of six disconnected vendors.
         </p>
         <p className="font-display font-normal text-ink leading-[1.05] tracking-[-0.02em] text-[36px] md:text-[52px] lg:text-[64px]">
           One plan. One agency. One accountable team.

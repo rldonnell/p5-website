@@ -118,7 +118,7 @@ export default function IdSuitePage() {
             The toolkit we built to run the work.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            Five tools. Three intelligence and identification layers. Two execution layers. All of them in service of one written plan and one accountable lead agency.
+            Five tools. Three intelligence and identification layers. Two execution layers. All of them in service of one written plan and one accountable primary agency.
           </p>
         </section>
 
@@ -140,7 +140,7 @@ export default function IdSuitePage() {
             </h2>
             <div className="space-y-5 text-ink text-[17px] md:text-[19px] leading-relaxed">
               <p>
-                A lead agency cannot hold the plan across paid, ads, PR, web, and content without seeing what every piece is doing in real time. The off-the-shelf tooling for that work was either too narrow, too expensive, or too detached from the actual marketing.
+                A primary marketing agency cannot hold the plan across paid, ads, PR, web, and content without seeing what every piece is doing in real time. The off-the-shelf tooling for that work was either too narrow, too expensive, or too detached from the actual marketing.
               </p>
               <p>
                 So P5 built its own. The toolkit below is the engine under every P5 engagement. It is not a product line for sale separately. It is what makes the lead-agency model run.

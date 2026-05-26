@@ -65,7 +65,7 @@ export default function VisitorIdPage() {
           className="max-w-site mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20 border-t border-taupe/20"
         >
           <div className="max-w-[68ch]">
-            <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">How the lead agency uses it</p>
+            <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">How the primary agency uses it</p>
             <h2
               id="visitorid-how-heading"
               className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] mb-8"

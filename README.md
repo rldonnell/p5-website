@@ -1,6 +1,6 @@
 # P5 Homepage — Next.js 14 + Tailwind
 
-The v1 homepage for P5, the lead agency for owner-operators of high-value service businesses. Built to the locked v1 visual brief: soft white background (#FAFAF6), forest accent (#6B8068), Fraunces + Inter typography via Google Fonts.
+The v1 homepage for P5, the primary marketing agency for owner-operators of high-value service businesses. Built to the locked v1 visual brief: soft white background (#FAFAF6), forest accent (#6B8068), Fraunces + Inter typography via Google Fonts.
 
 This is a fully self-contained Next.js 14 project. No `create-next-app` step needed. Drop the whole folder onto the target machine, install dependencies, run.
 
@@ -96,7 +96,7 @@ git commit -m "Initial homepage v1"
 
 The site speaks to **owner-operators of high-value service businesses**, $1M–$5M in revenue, where one customer is worth $10K and up and the buying journey takes weeks. The category spans cosmetic surgery, wedding venues, luxury contractors, legal practices, specialty medical and dental, and restaurant groups. The structural insight at the center: the buyer journey is identical across these verticals, which is why one model serves all of them.
 
-P5's role is the **lead agency**. P5 defines the ICP, writes the plan that coordinates paid media, Google Ads, public relations, web, and the SEO and GEO content P5 ships, runs proprietary research tooling, bridges marketing to the business's front-line sales process, and measures the whole program continuously through anonymous website visitor identification and traffic attribution. P5 is not a fractional CMO, not an all-in-one agency, not another vendor to manage.
+P5's role is the **primary marketing agency**. P5 defines the ICP, writes the plan that coordinates paid media, Google Ads, public relations, web, and the SEO and GEO content P5 ships, runs proprietary research tooling, bridges marketing to the business's front-line sales process, and measures the whole program continuously through anonymous website visitor identification and traffic attribution. P5 is not a fractional CMO, not an all-in-one agency, not another vendor to manage.
 
 ## Manual to-dos before launch
 

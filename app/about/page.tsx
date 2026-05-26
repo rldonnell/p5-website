@@ -6,7 +6,7 @@ import ButtonLink from "@/components/ButtonLink";
 export const metadata: Metadata = {
   title: "About  |  P5 Marketing",
   description:
-    "P5 is the lead agency for owner-operators of high-value service businesses. A senior team with twenty-five years building marketing engines for businesses where one customer is worth $10K and up.",
+    "P5 is the primary marketing agency for owner-operators of high-value service businesses. A senior team with twenty-five years building marketing engines for businesses where one customer is worth $10K and up.",
   alternates: { canonical: "/about/" },
 };
 
@@ -64,7 +64,7 @@ export default function AboutPage() {
             Twenty-five years. One job: run the marketing for owner-operators.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            P5 is the lead agency for owner-operators of high-value service businesses. We hold the plan across your full vendor stack, build the toolkit that makes the plan run, and stay accountable to the only number that matters: customers booked.
+            P5 is the primary marketing agency for owner-operators of high-value service businesses. We hold the plan across your full vendor stack, build the toolkit that makes the plan run, and stay accountable to the only number that matters: customers booked.
           </p>
         </section>
 
@@ -123,7 +123,7 @@ export default function AboutPage() {
               id="about-manifesto"
               className="text-ink leading-relaxed text-[18px] md:text-[20px] mb-16 md:mb-20"
             >
-              P5 was built because too many owner-operators were carrying their own marketing plan and calling that &ldquo;having an agency.&rdquo; That isn&apos;t an agency. That is a vendor list with a project manager who happens to also own the business. P5 is the lead agency for owner-operators who want one accountable plan instead of six disconnected vendors.
+              P5 was built because too many owner-operators were carrying their own marketing plan and calling that &ldquo;having an agency.&rdquo; That isn&apos;t an agency. That is a vendor list with a project manager who happens to also own the business. P5 is the primary marketing agency for owner-operators who want one accountable plan instead of six disconnected vendors.
             </p>
             <p className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] lg:text-[44px]">
               One plan. One agency. One accountable team.

@@ -7,7 +7,7 @@ import ButtonLink from "@/components/ButtonLink";
 export const metadata: Metadata = {
   title: "Who We Work With  |  P5 Marketing",
   description:
-    "P5 is the lead agency for owner-operators of high-value service businesses, $1M to $5M in revenue, where one customer is worth $10K and up and the buying journey takes weeks.",
+    "P5 is the primary marketing agency for owner-operators of high-value service businesses, $1M to $5M in revenue, where one customer is worth $10K and up and the buying journey takes weeks.",
   alternates: { canonical: "/markets/" },
   openGraph: {
     title: "Who We Work With  |  P5 Marketing",
@@ -82,7 +82,7 @@ export default function MarketsPage() {
             Your industry doesn&apos;t matter. Your economics do.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            P5 is the lead agency for owner-operators where one new customer pays for the engagement many times over.
+            P5 is the primary marketing agency for owner-operators where one new customer pays for the engagement many times over.
           </p>
         </section>
 
@@ -131,7 +131,7 @@ export default function MarketsPage() {
               And working together looks like this
             </p>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] max-w-[68ch]">
-              As your lead agency, P5 defines the ideal customer profile (ICP), writes the plan that ties together paid media, Google Ads, public relations, web, and the SEO and GEO content P5 ships, and measures the whole program continuously with anonymous website visitor identification and traffic attribution. The plan is the through line across every vendor in your stack.
+              As your primary marketing agency, P5 defines the ideal customer profile (ICP), writes the plan that ties together paid media, Google Ads, public relations, web, and the SEO and GEO content P5 ships, and measures the whole program continuously with anonymous website visitor identification and traffic attribution. The plan is the through line across every vendor in your stack.
             </p>
           </div>
         </section>
