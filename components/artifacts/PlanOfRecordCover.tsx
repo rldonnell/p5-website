@@ -26,7 +26,7 @@ export default function PlanOfRecordCover() {
         <rect width="320" height="440" fill="#FAFAF6" />
 
         {/* Inner margin rule (top) */}
-        <line x1="40" y1="40" x2="80" y2="40" stroke="#3B4E36" strokeWidth="2" />
+        <line x1="40" y1="40" x2="80" y2="40" stroke="#6B8068" strokeWidth="2" />
 
         {/* Eyebrow */}
         <text

@@ -24,7 +24,7 @@ export default function BenchmarkReportCover() {
         <rect width="320" height="440" fill="#FAFAF6" />
 
         {/* Forest accent strip across top */}
-        <rect x="0" y="0" width="320" height="6" fill="#3B4E36" />
+        <rect x="0" y="0" width="320" height="6" fill="#6B8068" />
 
         {/* Eyebrow */}
         <text
@@ -89,7 +89,7 @@ export default function BenchmarkReportCover() {
         <text
           x="40"
           y="340"
-          fill="#3B4E36"
+          fill="#6B8068"
           fontFamily="var(--font-fraunces), Georgia, 'Times New Roman', serif"
           fontSize="76"
           fontWeight="500"

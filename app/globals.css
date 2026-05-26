@@ -10,9 +10,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  /* Subtle engraved-paper feel:
+     A single 45-degree hairline repeated on a 12px grid at 2% ink opacity.
+     Reads as fine paper texture / engraved-line work from any normal viewing
+     distance. Tiles seamlessly. Layers on top of the bg-bone background-color
+     set by the body's Tailwind class.
+
+     Encoded SVG fits in a data URI so no external request, no extra file. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M0 12 L12 0' stroke='%2314110D' stroke-opacity='0.022' stroke-width='0.4' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 ::selection {
-  background-color: #3B4E36;
+  background-color: #6B8068;
   color: #FAFAF6;
 }

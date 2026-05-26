@@ -12,7 +12,7 @@ const config: Config = {
         bone: "#FAFAF6",        // primary background, soft white
         "bone-deep": "#F0F0EC", // one-step-deeper band for Section 5 and footer
         ink: "#14110D",         // body text, near-black with warmth
-        forest: "#3B4E36",      // primary accent, used sparingly
+        forest: "#6B8068",      // primary accent, used sparingly
         taupe: "#6B6358",       // secondary text, dividers, eyebrows
         oxblood: "#6B2A2A",     // reserved for error states only
       },
