@@ -13,15 +13,15 @@ body {
 
   /* Engraved-paper feel:
      Cross-hatched 45-degree hairlines on a 14px grid. Reads as fine etched
-     line work (think currency / stock certificate texture) without being a
-     visible pattern. Tiles seamlessly. Layers on top of the bg-bone
-     background-color set by the body's Tailwind class.
+     line work (think currency / stock certificate texture). Tiles
+     seamlessly. Layers on top of the bg-bone background-color set by the
+     body's Tailwind class.
 
-     To dial intensity: stroke-opacity (currently 0.07) and stroke-width
-     (currently 0.6) are the levers. Push opacity to 0.10–0.12 for more
-     obvious texture; drop to 0.04 for barely-there. Encoded SVG fits in a
-     data URI so no external request, no extra file. */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M0 14 L14 0 M0 0 L14 14' stroke='%2314110D' stroke-opacity='0.07' stroke-width='0.6' fill='none'/%3E%3C/svg%3E");
+     To dial intensity: stroke-opacity (currently 0.20) and stroke-width
+     (currently 0.6) are the levers. Drop opacity to 0.10 for quieter
+     texture; push to 0.28 for more obvious paper-tooth. Encoded SVG fits
+     in a data URI so no external request, no extra file. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M0 14 L14 0 M0 0 L14 14' stroke='%2314110D' stroke-opacity='0.20' stroke-width='0.6' fill='none'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -33,14 +33,22 @@ body {
 
 /* Engraved button texture — dense cross-hatch on a 6px grid, ~22% ink
    opacity. Reads as a printed-currency / etched-seal pattern when layered
-   on top of the forest CTA background. On hover the bg-color transitions
-   to ink, at which point the texture quietly fades into the dark background
-   (intentional — like the texture only lives in the "raised" state).
+   on top of the forest CTA background. Combined with the text-shadow
+   below, the button label reads as engraved INTO the surface — dark
+   recess shadow below each letter + a faint highlight above mimics
+   intaglio-press dimensionality. On hover the bg-color transitions to
+   ink, and the texture fades into the dark fill naturally.
 
-   Levers: stroke-opacity (currently 0.22) and grid size (currently 6px in
-   the width/height attrs of the SVG). Push opacity to 0.28+ for more
-   visible engraving; loosen grid to 8px for less density. */
+   Levers:
+   - stroke-opacity on the bg pattern (currently 0.22) — push for more
+     visible cross-hatch.
+   - text-shadow values — first shadow is the dark recess, second is the
+     top-edge highlight. Increase the alpha values for more dimensional
+     pop, decrease for subtler letterpress feel. */
 .btn-engraved {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6 L6 0 M0 0 L6 6' stroke='%2314110D' stroke-opacity='0.22' stroke-width='0.5' fill='none'/%3E%3C/svg%3E");
   background-repeat: repeat;
+  text-shadow:
+    0 1px 0 rgba(20, 17, 13, 0.45),
+    0 -1px 1px rgba(255, 255, 255, 0.18);
 }
