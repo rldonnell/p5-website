@@ -9,7 +9,7 @@ export default function Hero() {
       className="max-w-site mx-auto px-6 md:px-12 lg:px-16 pt-8 md:pt-10 lg:pt-14 pb-12 md:pb-14 lg:pb-20"
     >
       <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-10 md:mb-14">
-        The lead marketing agency for owner-operated high-value service businesses
+        The lead agency for owner-operated high-value service businesses
       </p>
 
       <h1

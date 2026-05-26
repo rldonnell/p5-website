@@ -6,7 +6,7 @@ import ButtonLink from "@/components/ButtonLink";
 export const metadata: Metadata = {
   title: "About  |  P5 Marketing",
   description:
-    "P5 is the lead marketing and sales agency for owner-operators of high-value service businesses. A senior team with twenty-five years building marketing engines for businesses where one customer is worth $10K and up.",
+    "P5 is the lead agency for owner-operators of high-value service businesses. A senior team with twenty-five years building marketing engines for businesses where one customer is worth $10K and up.",
   alternates: { canonical: "/about/" },
 };
 
@@ -64,7 +64,7 @@ export default function AboutPage() {
             Twenty-five years. One job: run the marketing for owner-operators.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            P5 is the lead marketing and sales agency for owner-operators of high-value service businesses. We hold the plan across your full vendor stack, build the toolkit that makes the plan run, and stay accountable to the only number that matters: customers booked.
+            P5 is the lead agency for owner-operators of high-value service businesses. We hold the plan across your full vendor stack, build the toolkit that makes the plan run, and stay accountable to the only number that matters: customers booked.
           </p>
         </section>
 

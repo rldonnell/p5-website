@@ -1,6 +1,6 @@
 # P5 Homepage — Next.js 14 + Tailwind
 
-The v1 homepage for P5, the lead marketing and sales agency for owner-operators of high-value service businesses. Built to the locked v1 visual brief: soft white background (#FAFAF6), forest accent (#6B8068), Fraunces + Inter typography via Google Fonts.
+The v1 homepage for P5, the lead agency for owner-operators of high-value service businesses. Built to the locked v1 visual brief: soft white background (#FAFAF6), forest accent (#6B8068), Fraunces + Inter typography via Google Fonts.
 
 This is a fully self-contained Next.js 14 project. No `create-next-app` step needed. Drop the whole folder onto the target machine, install dependencies, run.
 

@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "P5  |  The lead marketing agency for high-value service businesses",
+  title: "P5  |  The lead agency for high-value service businesses",
   description:
-    "P5 is the lead marketing and sales agency for owner-operators of high-value service businesses, $1M to $5M in revenue, where one customer is worth $10K and up and the buying journey takes weeks. We build the ICP, write the plan that coordinates paid, ads, PR, and content, and measure the whole program with visitor identification and attribution.",
+    "P5 is the lead agency for owner-operators of high-value service businesses, $1M to $5M in revenue, where one customer is worth $10K and up and the buying journey takes weeks. We hold the marketing plan, coordinate paid, ads, PR, and content, bridge to sales, and measure the whole program with visitor identification and attribution.",
   openGraph: {
     title: "P5  |  One accountable lead agency, not another vendor",
     description:

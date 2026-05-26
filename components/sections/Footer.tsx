@@ -8,7 +8,7 @@ export default function Footer() {
     <footer id="contact" className="bg-bone-deep border-t border-taupe/25">
       <div className="max-w-site mx-auto px-6 md:px-12 lg:px-16 pt-14 md:pt-20 pb-10">
         <p className="font-display font-normal text-ink leading-[1.2] tracking-[-0.005em] text-[22px] md:text-[26px] lg:text-[28px] max-w-[680px] mb-20 md:mb-24">
-          The lead marketing agency for owner-operators of high-value service businesses.
+          The lead agency for owner-operators of high-value service businesses.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 lg:gap-12">
