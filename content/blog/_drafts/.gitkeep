@@ -1,0 +1,8 @@
+# Drafts folder
+#
+# Drop in-progress .docx or .mdx files here while you work on them.
+# Files in this folder are NOT published (the blog data layer only reads
+# the parent content/blog/ folder, not this subfolder).
+#
+# When a post is ready, move it (or its converted .mdx) up one level
+# into content/blog/.

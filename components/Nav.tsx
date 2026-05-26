@@ -6,6 +6,7 @@ const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Toolkit", href: "/the-id-suite/" },
   { label: "Who we work with", href: "/markets/" },
   { label: "About", href: "/about/" },
+  { label: "Blog", href: "/blog/" },
   { label: "Plan of Record", href: "/#plan-of-record" },
   { label: "Contact", href: "/contact/" },
 ];

@@ -119,6 +119,59 @@ Inter-section padding is intentionally tighter than the original visual brief su
 
 Future pages inherit this scale. Don't push a section above `lg:py-20` without a reason — readers should be able to sense another section below from the bottom of the current one.
 
+## Publishing a blog post
+
+Posts live as MDX files in `content/blog/`. Each file is a markdown body with a YAML frontmatter block at the top:
+
+```mdx
+---
+title: "The post title"
+date: "2026-05-25"
+description: "One sentence shown on the index and in search meta."
+---
+
+Post body in markdown. Paragraphs separated by blank lines. **Bold**, _italic_, [links](https://example.com), bulleted lists, headings (`##`, `###`), block quotes, all standard markdown.
+```
+
+### Option A — write the post in Word, import
+
+The cleanest path for long-form posts. Draft in Word using normal headings and styles, save as `.docx`, then run:
+
+```bash
+npm run import-docx -- "/path/to/Your Post.docx"
+```
+
+(Note the double-dash — that's how npm passes the argument to the script.)
+
+The script reads the docx, converts it to clean markdown, extracts inline images to `public/blog-images/`, and writes `content/blog/<slugified-filename>.mdx` with starter frontmatter. Then:
+
+1. Open the new `.mdx` file
+2. Edit the `description:` line (currently a placeholder)
+3. Review the body — headings, lists, links should survive intact; if Word fouled anything up, fix it
+4. Commit and push:
+   ```bash
+   git add content/blog/ public/blog-images/
+   git commit -m "Publish: <post title>"
+   git push
+   ```
+5. Vercel deploys automatically. New post is live in 1-2 minutes.
+
+### Option B — write directly in markdown
+
+Create a new file at `content/blog/<slug>.mdx`, write the frontmatter, write the body in markdown, commit. Same final steps.
+
+### Drafts
+
+Put work-in-progress files in `content/blog/_drafts/`. The blog data layer ignores that subfolder, so drafts don't show up on the live site. Move the file up one level into `content/blog/` when ready to publish.
+
+### Styling
+
+Post body styling comes from `mdx-components.tsx` at the project root. Headings, paragraphs, links, lists, and blockquotes all inherit the soft-white + forest visual automatically — no per-post styling needed. To change how a particular tag renders across every post, edit the matching component in that file.
+
+### Where to write the post URL
+
+The post's URL is `/blog/<slug>/`. The slug comes from the filename without `.mdx`, so `the-importance-of-a-strong-content-strategy.mdx` becomes `https://p5marketing.com/blog/the-importance-of-a-strong-content-strategy/`. Pick clean filenames at import time and you don't need to think about URLs.
+
 ## Voice and constraints baked in
 
 No em-dashes anywhere in copy. No exclamation points. No emojis. No before/after imagery, no dashboard screenshots, no procedure references. No "trusted by" logo strip. No animation, no parallax, no gradients. One `<h1>` per page (in Hero).
