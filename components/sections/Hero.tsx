@@ -14,9 +14,15 @@ export default function Hero() {
 
       <h1
         id="hero-heading"
-        className="font-display font-normal text-ink leading-[1.05] tracking-[-0.015em] max-w-[18ch] text-[36px] sm:text-[44px] md:text-[60px] lg:text-[72px] mb-8 md:mb-10"
+        className="font-display font-normal text-ink leading-[1.05] tracking-[-0.015em] text-[36px] sm:text-[44px] md:text-[60px] lg:text-[72px] mb-8 md:mb-10"
       >
-        You&apos;re the founder. You&apos;re the owner. Somehow you&apos;re also the marketing quarterback.
+        You&apos;re the founder.
+        <br />
+        You&apos;re the owner.
+        <br />
+        Somehow you&apos;re also the
+        <br />
+        marketing quarterback.
       </h1>
 
       <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px] mb-12 md:mb-16">
