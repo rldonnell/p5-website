@@ -19,15 +19,15 @@ export default function Hero() {
             id="hero-heading"
             className="font-display font-normal text-ink leading-[1.05] tracking-[-0.015em] text-[28px] sm:text-[34px] md:text-[48px] lg:text-[56px] mb-8 md:mb-10"
           >
-            You&apos;re the owner.
-            <br />
-            <span className="text-forest">Somehow you&apos;re also the marketing quarterback.</span>
-            <br />
-            Is it time to focus on what you do best again?
+            <span className="block">You&apos;re the owner.</span>
+            <span className="block text-forest my-[0.5em]">
+              Somehow you&apos;re also the marketing quarterback.
+            </span>
+            <span className="block">Is it time to focus on what you do best again?</span>
           </h1>
 
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px] mb-12 md:mb-16">
-            We coordinate the plan across your vendors so your team is focused toward a single outcome.
+            We run your search, AI visibility, and content ourselves, and align the rest of your vendor stack toward a single outcome.
           </p>
 
           <div className="flex flex-wrap items-center gap-x-8 gap-y-5">
@@ -46,6 +46,9 @@ export default function Hero() {
 
         <div className="lg:col-span-4">
           <HeroVideo />
+          <p className="w-full max-w-[420px] mx-auto lg:mx-0 lg:ml-auto mt-4 text-[12px] tracking-eyebrow uppercase text-forest text-center">
+            Our spot. Our music. AI on the team.
+          </p>
         </div>
       </div>
     </section>

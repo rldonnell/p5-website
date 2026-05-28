@@ -77,11 +77,11 @@ export default function HeroVideo({
           >
             <svg
               viewBox="0 0 64 64"
-              width="64"
-              height="64"
+              width="88"
+              height="88"
               className="drop-shadow-lg"
             >
-              <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.55)" />
+              <circle cx="32" cy="32" r="32" fill="#6B8068" />
               <path d="M26 20 L46 32 L26 44 Z" fill="#FAFAF6" />
             </svg>
           </span>
