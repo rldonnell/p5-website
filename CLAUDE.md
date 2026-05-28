@@ -2,7 +2,7 @@
 
 ## P5 Website — Next.js 14 (App Router), TypeScript, Tailwind
 
-Repo: https://github.com/rlDonnell/p5-website
+Repo: https://github.com/rldonnell/p5-website (note: lowercase username, GitHub renamed from rlDonnell)
 Deploys: Vercel, auto-deploys on push to `main`.
 
 ## User preferences

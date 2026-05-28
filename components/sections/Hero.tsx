@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px] mb-12 md:mb-16">
-            We run your search, AI visibility, and content ourselves, and align the rest of your vendor stack toward a single outcome.
+            We run your search, AI visibility, and content ourselves, and align the rest of your marketing team toward a single outcome.
           </p>
 
           <div className="flex flex-wrap items-center gap-x-8 gap-y-5">
