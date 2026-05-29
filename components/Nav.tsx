@@ -7,7 +7,7 @@ const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Who we work with", href: "/markets/" },
   { label: "About", href: "/about/" },
   { label: "Blog", href: "/blog/" },
-  { label: "Plan of Record", href: "/#plan-of-record" },
+  { label: "Playbook", href: "/#playbook" },
   { label: "Contact", href: "/contact/" },
 ];
 
@@ -37,10 +37,10 @@ export default function Nav() {
           ))}
         </nav>
         <Link
-          href="/#plan-of-record"
+          href="/#playbook"
           className="md:hidden text-[12px] tracking-cta uppercase text-forest"
         >
-          Plan of Record
+          Playbook
         </Link>
       </div>
     </header>

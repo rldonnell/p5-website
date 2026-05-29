@@ -1,7 +1,7 @@
 /**
  * Benchmark report cover — typographic mockup of "The State of
  * High-Ticket Service Marketing 2026." Same construction as the
- * Plan of Record cover so the two read as a related set.
+ * Playbook cover so the two read as a related set.
  */
 export default function BenchmarkReportCover() {
   return (

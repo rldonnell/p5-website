@@ -15,7 +15,7 @@ export default function Problem() {
             id="problem-heading"
             className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[32px] md:text-[40px] lg:text-[48px]"
           >
-            The problem isn&apos;t your marketing. It&apos;s that nobody is holding the plan.
+            The problem isn&apos;t your marketing. It&apos;s that nobody is calling the plays.
           </h2>
         </div>
 
@@ -24,7 +24,7 @@ export default function Problem() {
             Most owner-operators end up with five or six vendors. A PR firm. A paid media buyer. A web developer. A social agency. Maybe an SEO consultant. None of them talk to each other.
           </p>
           <p className="text-ink leading-relaxed text-[17px] md:text-[19px]">
-            When no one is holding the plan, the owner becomes the strategist by default. Growth then ceilings out at the owner&apos;s personal bandwidth. That is the structural problem, and it doesn&apos;t have a tactical fix.
+            When no one is calling the plays, the owner becomes the strategist by default. Growth then ceilings out at the owner&apos;s personal bandwidth. That is the structural problem, and it doesn&apos;t have a tactical fix.
           </p>
         </div>
       </div>

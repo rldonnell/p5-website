@@ -109,13 +109,13 @@ export default function IntelIdPage() {
               The briefing ships with the engagement.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              IntelID is the intelligence input to the lead-agency plan. Begin a Plan of Record and the first briefing arrives within two weeks.
+              IntelID is the intelligence input to the lead-agency Playbook. Build your Playbook and the first briefing arrives within two weeks.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

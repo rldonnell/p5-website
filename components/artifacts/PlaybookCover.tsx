@@ -1,9 +1,9 @@
 /**
- * Plan of Record cover — a typographic mockup of the deliverable.
+ * Playbook cover — a typographic mockup of the deliverable.
  * Pure SVG, no external assets. Inherits font families from the page
  * via CSS so it picks up Fraunces + Inter when available.
  */
-export default function PlanOfRecordCover() {
+export default function PlaybookCover() {
   return (
     <div
       className="relative"
@@ -20,7 +20,7 @@ export default function PlanOfRecordCover() {
         xmlns="http://www.w3.org/2000/svg"
         className="w-full max-w-[320px] h-auto"
         role="img"
-        aria-label="Sample cover of a P5 Plan of Record document"
+        aria-label="Sample cover of a P5 Playbook document"
       >
         {/* Cover paper */}
         <rect width="320" height="440" fill="#FAFAF6" />
@@ -38,7 +38,7 @@ export default function PlanOfRecordCover() {
           fontWeight="600"
           letterSpacing="2"
         >
-          P5 · MARKETING PLAN OF RECORD
+          P5 · THE PLAYBOOK
         </text>
 
         {/* Title — stacked, serif, generous spacing */}
@@ -51,7 +51,7 @@ export default function PlanOfRecordCover() {
           fontWeight="500"
           letterSpacing="-1"
         >
-          Plan of
+          The
         </text>
         <text
           x="40"
@@ -62,7 +62,7 @@ export default function PlanOfRecordCover() {
           fontWeight="500"
           letterSpacing="-1"
         >
-          Record
+          Playbook
         </text>
 
         {/* Subtitle */}

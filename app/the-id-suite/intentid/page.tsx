@@ -109,13 +109,13 @@ export default function IntentIdPage() {
               IntentID ships with the engagement.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              IntentID is the audience layer inside a P5 engagement. Begin a Plan of Record and the first audiences sync into your paid platforms in week two or three.
+              IntentID is the audience layer inside a P5 engagement. Build your Playbook and the first audiences sync into your paid platforms in week two or three.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

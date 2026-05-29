@@ -243,7 +243,7 @@ export default function MarketsPage() {
           </div>
         </section>
 
-        {/* Section 6: CTA — Plan of Record */}
+        {/* Section 6: CTA — Build your Playbook */}
         <section
           aria-labelledby="markets-cta-heading"
           className="max-w-site mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28 border-t border-taupe/20"
@@ -257,16 +257,16 @@ export default function MarketsPage() {
               id="markets-cta-heading"
               className="font-display font-normal text-ink leading-[1.05] tracking-[-0.015em] text-[36px] md:text-[44px] lg:text-[52px] mb-8"
             >
-              Begin a Plan of Record.
+              Build your Playbook.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              If you fit the profile and want a written marketing plan that ties your full vendor stack together, the Plan of Record is the first paid step. Independent of any ongoing engagement. The plan is the deliverable, and you own it whether or not you continue with P5.
+              If you fit the profile and want a written Playbook that ties your full vendor stack together, building the Playbook is the first paid step. Independent of any ongoing engagement. The Playbook is the deliverable, and you own it whether or not you continue with P5.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

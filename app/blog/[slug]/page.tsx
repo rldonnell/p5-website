@@ -70,7 +70,7 @@ export default function BlogPostPage({ params }: { params: Params }) {
           </div>
         </article>
 
-        {/* CTA — Plan of Record */}
+        {/* CTA — Build your Playbook */}
         <section
           aria-labelledby="blog-post-cta"
           className="max-w-site mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28 border-t border-taupe/20"
@@ -87,13 +87,13 @@ export default function BlogPostPage({ params }: { params: Params }) {
               Want this thinking applied to your business?
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              The Plan of Record diagnostic produces a written marketing plan for your business, independent of any ongoing engagement.
+              The Playbook is the written marketing plan for your business. We build it with you, then we run it. Independent of any ongoing engagement.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

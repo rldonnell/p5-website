@@ -64,7 +64,7 @@ export default function AboutPage() {
             Twenty-five years. One job: run the marketing for owner-operators.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            P5 is the primary marketing agency for owner-operators of high-value service businesses. We hold the plan across your full vendor stack, build the toolkit that makes the plan run, and stay accountable to the only number that matters: customers booked.
+            P5 is the primary marketing agency for owner-operators of high-value service businesses. We build the Playbook with you, run it across your full vendor stack with the toolkit we built ourselves, and stay accountable to the only number that matters: customers booked.
           </p>
         </section>
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
               id="team-heading"
               className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] lg:text-[40px] max-w-[26ch]"
             >
-              The people behind the plan.
+              The people behind the Playbook.
             </h2>
           </div>
 
@@ -145,16 +145,16 @@ export default function AboutPage() {
               id="about-cta"
               className="font-display font-normal text-ink leading-[1.05] tracking-[-0.015em] text-[36px] md:text-[44px] lg:text-[52px] mb-8"
             >
-              Begin a Plan of Record.
+              Build your Playbook.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
               Thirty minutes with a senior strategist. No pitch. Honest questions about your business and your current vendor stack. If P5 is a fit, we tell you what we would do. If we are not, we say so.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

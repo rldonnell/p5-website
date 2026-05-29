@@ -140,7 +140,7 @@ export default function IdSuitePage() {
             </h2>
             <div className="space-y-5 text-ink text-[17px] md:text-[19px] leading-relaxed">
               <p>
-                A primary marketing agency cannot hold the plan across paid, ads, PR, web, and content without seeing what every piece is doing in real time. The off-the-shelf tooling for that work was either too narrow, too expensive, or too detached from the actual marketing.
+                A primary marketing agency cannot run the Playbook across paid, ads, PR, web, and content without seeing what every piece is doing in real time. The off-the-shelf tooling for that work was either too narrow, too expensive, or too detached from the actual marketing.
               </p>
               <p>
                 So P5 built its own. The toolkit below is the engine under every P5 engagement. It is not a product line for sale separately. It is what makes the lead-agency model run.
@@ -162,7 +162,7 @@ export default function IdSuitePage() {
               id="intel-tools-heading"
               className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] lg:text-[40px] max-w-[24ch]"
             >
-              Three layers of signal feeding the plan.
+              Three layers of signal feeding the Playbook.
             </h2>
           </div>
 
@@ -205,13 +205,13 @@ export default function IdSuitePage() {
           <div className="max-w-site mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20">
             <div className="max-w-[760px]">
               <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">
-                How the toolkit feeds the plan
+                How the toolkit feeds the Playbook
               </p>
               <h2
                 id="flow-heading"
                 className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] lg:text-[40px] mb-10 max-w-[24ch]"
               >
-                Six steps. One loop. The plan rewrites itself.
+                Six steps. One loop. The Playbook rewrites itself.
               </h2>
               <ol className="space-y-4 list-none p-0">
                 {FLOW.map((line, i) => (
@@ -246,13 +246,13 @@ export default function IdSuitePage() {
               The toolkit ships with the engagement.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              The ID Suite is not a product you buy separately. It is the engine under the Plan of Record. Begin the diagnostic and the toolkit is part of the work from day one.
+              The ID Suite is not a product you buy separately. It is the engine under the Playbook. Build your Playbook and the toolkit is part of the work from day one.
             </p>
             <ButtonLink
-              href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+              href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"
               variant="forest"
             >
-              Begin a Plan of Record
+              Build your Playbook
             </ButtonLink>
           </div>
         </section>

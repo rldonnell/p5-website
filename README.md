@@ -69,7 +69,7 @@ P5 Website 20260530/
         ├── Model.tsx
         ├── Practice.tsx
         ├── Fieldwork.tsx
-        ├── PlanOfRecord.tsx
+        ├── Playbook.tsx
         ├── Manifesto.tsx
         └── Footer.tsx
 ```
@@ -101,7 +101,7 @@ P5's role is the **primary marketing agency**. P5 defines the ICP, writes the pl
 ## Manual to-dos before launch
 
 1. **Email backend for the report opt-in.** `/api/report-signup` currently returns 200 without persisting anything. Wire it to your preferred backend: Resend for confirmation emails, Vercel KV for a waitlist, or a Klaviyo/ConvertKit list. The endpoint contract is `{ email: string }` in, `{ ok: true }` out.
-2. **Plan of Record CTA destination.** Currently a `mailto:rdonnell@p5marketing.com` link. When the diagnostic intake form is built, swap the `href` in `components/sections/PlanOfRecord.tsx` to `/diagnostic`.
+2. **Playbook CTA destination.** Currently a `mailto:rdonnell@p5marketing.com` link. When the diagnostic intake form is built, swap the `href` in `components/sections/Playbook.tsx` to `/diagnostic`.
 3. **Wordmark.** The current `P5` mark is set in Fraunces. Replace with a proper SVG wordmark once that exploration round happens.
 4. **Privacy and Terms.** Both pages are placeholders. Replace with real copy before launch.
 5. **Open Graph image.** Add a `public/og.png` (1200x630) for share previews; reference it in `app/layout.tsx` metadata.
@@ -113,7 +113,7 @@ P5's role is the **primary marketing agency**. P5 defines the ICP, writes the pl
 Inter-section padding is intentionally tighter than the original visual brief suggested. The brief asked for "whitespace beyond what feels comfortable"; the live experience read as the page being over rather than luxurious. Locked values:
 
 - Standard section (Problem, Model, Practice, Fieldwork, Manifesto): `py-12 md:py-16 lg:py-20`
-- Plan of Record (carries the most weight): `py-16 md:py-20 lg:py-28`
+- Playbook (carries the most weight): `py-16 md:py-20 lg:py-28`
 - Hero top / bottom: `pt-8 md:pt-10 lg:pt-14` / `pb-12 md:pb-14 lg:pb-20`
 - Footer top: `pt-14 md:pt-20`
 
@@ -178,4 +178,4 @@ No em-dashes anywhere in copy. No exclamation points. No emojis. No before/after
 
 ## Future pages
 
-This homepage establishes the design tokens and component patterns. Subsequent pages (Plan of Record landing, Approach, What We Do, Tools, Who We Work With, About) extend this foundation rather than introducing new visual decisions.
+This homepage establishes the design tokens and component patterns. Subsequent pages (Playbook landing, Approach, What We Do, Tools, Who We Work With, About) extend this foundation rather than introducing new visual decisions.

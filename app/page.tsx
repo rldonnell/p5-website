@@ -4,7 +4,7 @@ import Problem from "@/components/sections/Problem";
 import Model from "@/components/sections/Model";
 import Practice from "@/components/sections/Practice";
 import Fieldwork from "@/components/sections/Fieldwork";
-import PlanOfRecord from "@/components/sections/PlanOfRecord";
+import Playbook from "@/components/sections/Playbook";
 import Manifesto from "@/components/sections/Manifesto";
 import Footer from "@/components/sections/Footer";
 
@@ -18,7 +18,7 @@ export default function Home() {
         <Model />
         <Practice />
         <Fieldwork />
-        <PlanOfRecord />
+        <Playbook />
         <Manifesto />
       </main>
       <Footer />

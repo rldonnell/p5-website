@@ -27,20 +27,25 @@ export default function Hero() {
           </h1>
 
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px] mb-12 md:mb-16">
-            We are accountable for your marketing goals. You set the direction, we build the plan, execute what&apos;s missing, and bring your other marketing and sales team into the same playbook. Then we measure all of it against actual sales.
+            We are accountable for your marketing goals. You set the direction, we build the plan, execute what&apos;s missing, and bring your other marketing and sales people into the same playbook. Then we measure all of it against actual sales.
           </p>
 
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-5">
-            <ButtonLink href="#plan-of-record" variant="forest">
-              Begin a Plan of Record
-            </ButtonLink>
-            <Link
-              href="#approach"
-              className="inline-flex items-center gap-2 text-[12px] tracking-cta uppercase text-taupe hover:text-ink transition-colors duration-150"
-            >
-              <ArrowDown size={14} aria-hidden="true" />
-              <span>How we work</span>
-            </Link>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-5">
+              <ButtonLink href="#playbook" variant="forest">
+                Build your Playbook
+              </ButtonLink>
+              <Link
+                href="#approach"
+                className="inline-flex items-center gap-2 text-[12px] tracking-cta uppercase text-taupe hover:text-ink transition-colors duration-150"
+              >
+                <ArrowDown size={14} aria-hidden="true" />
+                <span>How we work</span>
+              </Link>
+            </div>
+            <p className="text-[13px] text-taupe">
+              60 minutes. No commitment beyond the conversation.
+            </p>
           </div>
         </div>
 
