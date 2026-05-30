@@ -31,7 +31,7 @@ export default function Practice() {
       <div className="mb-16 md:mb-20">
         <div className="w-20 h-px bg-taupe/40 mb-6" aria-hidden="true" />
         <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">
-          03  ·  In practice
+          04  ·  In practice
         </p>
         <h2
           id="practice-heading"

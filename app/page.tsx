@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
+import Core from "@/components/sections/Core";
 import Model from "@/components/sections/Model";
 import Practice from "@/components/sections/Practice";
 import Fieldwork from "@/components/sections/Fieldwork";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
+        <Core />
         <Model />
         <Practice />
         <Fieldwork />

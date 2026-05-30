@@ -12,7 +12,7 @@ export default function Fieldwork() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 max-w-[680px]">
             <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">
-              04  ·  Forthcoming
+              05  ·  Forthcoming
             </p>
             <h2
               id="fieldwork-heading"

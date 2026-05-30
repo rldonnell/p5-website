@@ -8,7 +8,7 @@ export default function Model() {
       <div className="max-w-[68ch]">
         <div className="w-20 h-px bg-taupe/40 mb-6" aria-hidden="true" />
         <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-5">
-          02  ·  The model
+          03  ·  The model
         </p>
         <h2
           id="model-heading"

@@ -7,7 +7,7 @@ export default function Manifesto() {
     >
       <div className="max-w-[680px] mx-auto">
         <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-6">
-          06  ·  Why P5
+          07  ·  Why P5
         </p>
         <p
           id="manifesto-heading"

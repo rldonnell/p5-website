@@ -15,7 +15,7 @@ export default function Playbook() {
         <div className="lg:col-span-7 max-w-[720px]">
           <div className="w-14 h-px bg-forest mb-8" aria-hidden="true" />
           <p className="text-[11px] tracking-eyebrow uppercase text-taupe mb-6">
-            05  ·  The first step
+            06  ·  The first step
           </p>
           <h2
             id="playbook-heading"
