@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="lg:col-span-4">
           <HeroVideo />
           <p className="w-full max-w-[420px] mx-auto lg:mx-0 lg:ml-auto mt-4 text-[12px] tracking-eyebrow uppercase text-forest text-center">
-            Our spot. Our music. AI on the team.
+            Do what you do best
           </p>
         </div>
       </div>

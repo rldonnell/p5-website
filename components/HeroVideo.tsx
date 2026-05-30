@@ -21,10 +21,10 @@ type HeroVideoProps = {
  *     user gesture, which browsers permit.
  */
 export default function HeroVideo({
-  src = "/video/own-the-team.mp4",
-  posterWebp = "/video/own-the-team-poster.webp",
-  posterJpg = "/video/own-the-team-poster.jpg",
-  label = "Play video: Own the team",
+  src = "/video/do-what-you-do-best.mp4",
+  posterWebp = "/video/do-what-you-do-best-poster.webp",
+  posterJpg = "/video/do-what-you-do-best-poster.jpg",
+  label = "Play music video: Do what you do best",
 }: HeroVideoProps) {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
