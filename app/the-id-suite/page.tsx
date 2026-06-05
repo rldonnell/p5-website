@@ -7,12 +7,12 @@ import ButtonLink from "@/components/ButtonLink";
 export const metadata: Metadata = {
   title: "The P5 Toolkit  |  The ID Suite",
   description:
-    "The toolkit P5 built to run the lead-agency model. Five tools: IntelID, SearchID, IntentID, VisitorID, InboxID. Three intelligence and identification layers, two execution layers. All in service of one written plan.",
+    "The toolkit P5 built to run as the primary marketing agency. Five tools: IntelID, SearchID, IntentID, VisitorID, InboxID. Three intelligence and identification layers, two execution layers. All in service of one written plan.",
   alternates: { canonical: "/the-id-suite/" },
   openGraph: {
     title: "The P5 Toolkit  |  The ID Suite",
     description:
-      "The in-house tooling that powers a P5 engagement. Not a product line. The engine under the lead-agency model.",
+      "The in-house tooling that powers a P5 engagement. Not a product line. The engine under the primary-agency model.",
     type: "website",
     siteName: "P5",
     url: "https://p5marketing.com/the-id-suite/",
@@ -136,14 +136,14 @@ export default function IdSuitePage() {
               id="why-tools-heading"
               className="font-display font-normal text-ink leading-[1.1] tracking-[-0.01em] text-[28px] md:text-[36px] lg:text-[40px] mb-8"
             >
-              The lead-agency model only works if measurement is continuous.
+              The primary-agency model only works if measurement is continuous.
             </h2>
             <div className="space-y-5 text-ink text-[17px] md:text-[19px] leading-relaxed">
               <p>
                 A primary marketing agency cannot run the Playbook across paid, ads, PR, web, and content without seeing what every piece is doing in real time. The off-the-shelf tooling for that work was either too narrow, too expensive, or too detached from the actual marketing.
               </p>
               <p>
-                So P5 built its own. The toolkit below is the engine under every P5 engagement. It is not a product line for sale separately. It is what makes the lead-agency model run.
+                So P5 built its own. The toolkit below is the engine under every P5 engagement. It is not a product line for sale separately. It is what makes the primary-agency model run.
               </p>
             </div>
           </div>

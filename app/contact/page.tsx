@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact  |  P5 Marketing",
   description:
-    "Thirty minutes with a senior strategist. Honest questions, an honest fit assessment, and no pitch. If P5 is a fit, we tell you what we would do.",
+    "Sixty minutes with a senior strategist. Honest questions, an honest fit assessment, and no pitch. If P5 is a fit, we tell you what we would do.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
             Let&apos;s work out a time.
           </h1>
           <p className="text-ink leading-relaxed max-w-prose-tight text-[17px] md:text-[20px] lg:text-[22px]">
-            Three quick fields. A senior strategist follows up within one business day to find thirty minutes that works.
+            Three quick fields. A senior strategist follows up within one business day to find sixty minutes that works.
           </p>
         </section>
 

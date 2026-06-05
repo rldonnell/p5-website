@@ -148,7 +148,7 @@ export default function AboutPage() {
               Build your Playbook.
             </h2>
             <p className="text-ink leading-relaxed text-[17px] md:text-[19px] mb-10 max-w-[60ch]">
-              Thirty minutes with a senior strategist. No pitch. Honest questions about your business and your current vendor stack. If P5 is a fit, we tell you what we would do. If we are not, we say so.
+              Sixty minutes with a senior strategist. No pitch. Honest questions about your business and your current vendor stack. If P5 is a fit, we tell you what we would do. If we are not, we say so.
             </p>
             <ButtonLink
               href="mailto:rdonnell@p5marketing.com?subject=Build%20my%20Playbook"

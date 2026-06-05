@@ -10,7 +10,7 @@ export default function Hero() {
       className="max-w-site mx-auto px-6 md:px-12 lg:px-16 pt-8 md:pt-10 lg:pt-14 pb-12 md:pb-14 lg:pb-20"
     >
       <p className="text-[17px] tracking-eyebrow uppercase text-forest mb-10 md:mb-14">
-        The primary marketing agency for owner-operated high-value service businesses
+        The primary marketing agency for owner-operators of high-value service businesses
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">

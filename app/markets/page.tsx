@@ -238,7 +238,7 @@ export default function MarketsPage() {
               ))}
             </ul>
             <p className="mt-10 text-taupe text-[15px] leading-relaxed">
-              We&apos;ll tell you in the fit conversation if any of that applies. Better to find out in thirty minutes than four months in.
+              We&apos;ll tell you in the fit conversation if any of that applies. Better to find out in sixty minutes than four months in.
             </p>
           </div>
         </section>
