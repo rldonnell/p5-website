@@ -33,6 +33,8 @@ const nextConfig = {
       { source: "/the-id-suite/searchid", destination: "/the-id-suite/seo-accelerator/", permanent: true },
 
       /* ── Spanish-language paths (live site had a brief /es/ run) ── */
+      { source: "/es/contact-us/", destination: "/contact/", permanent: true },
+      { source: "/es/contact-us", destination: "/contact/", permanent: true },
       { source: "/es/contacto/", destination: "/contact/", permanent: true },
       { source: "/es/portafolio/", destination: "/about/", permanent: true },
       { source: "/es/servicios/", destination: "/", permanent: true },
@@ -85,6 +87,9 @@ const nextConfig = {
       /* ── Blog URL forwarding ─────────────────────────────────────────── */
       /* The one post that's ported keeps its slug.                        */
       { source: "/the-importance-of-a-strong-content-strategy/", destination: "/blog/the-importance-of-a-strong-content-strategy/", permanent: true },
+      /* Old cornerstone-content URL points at the same ported post.       */
+      { source: "/cornerstone-content-strategy/", destination: "/blog/the-importance-of-a-strong-content-strategy/", permanent: true },
+      { source: "/cornerstone-content-strategy", destination: "/blog/the-importance-of-a-strong-content-strategy/", permanent: true },
       /* The one unported post sends visitors to the blog index.           */
       { source: "/ai-website-development-a-tool-that-knows-you/", destination: "/blog/", permanent: true },
       { source: "/blog/ai-website-development-a-tool-that-knows-you/", destination: "/blog/", permanent: true },
@@ -95,6 +100,8 @@ const nextConfig = {
 
       /* ── Legal aliases ── */
       { source: "/disclaimer-statement/", destination: "/terms-and-conditions/", permanent: true },
+      { source: "/privacy-policy-for-site-users/", destination: "/privacy-policy/", permanent: true },
+      { source: "/privacy-policy-for-site-users", destination: "/privacy-policy/", permanent: true },
 
       /* ── WordPress detritus from the old install (security + cleanup) ── */
       { source: "/author/:path*", destination: "/", permanent: true },
