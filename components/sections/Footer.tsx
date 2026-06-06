@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ReportSignup from "@/components/ReportSignup";
 
 export default function Footer() {
@@ -13,12 +14,14 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 lg:gap-12">
           <div className="md:col-span-5">
-            <Link
-              href="/"
-              className="font-display text-3xl md:text-4xl text-ink font-medium tracking-tight inline-block"
-              aria-label="P5 home"
-            >
-              P5
+            <Link href="/" className="inline-block" aria-label="P5 home">
+              <Image
+                src="/images/p5-coin.png"
+                alt="P5"
+                width={512}
+                height={512}
+                className="h-12 w-12 md:h-14 md:w-14"
+              />
             </Link>
           </div>
 

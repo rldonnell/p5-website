@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Approach", href: "/#approach" },
@@ -15,12 +16,15 @@ export default function Nav() {
   return (
     <header className="w-full">
       <div className="max-w-site mx-auto px-6 md:px-12 lg:px-16 py-6 md:py-8 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-display text-2xl md:text-[28px] font-medium tracking-tight text-ink"
-          aria-label="P5 home"
-        >
-          P5
+        <Link href="/" className="inline-flex items-center" aria-label="P5 home">
+          <Image
+            src="/images/p5-coin.png"
+            alt="P5"
+            width={512}
+            height={512}
+            priority
+            className="h-10 w-10 md:h-12 md:w-12"
+          />
         </Link>
         <nav
           aria-label="Primary"
