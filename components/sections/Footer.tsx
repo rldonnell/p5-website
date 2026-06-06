@@ -20,7 +20,7 @@ export default function Footer() {
                 alt="P5"
                 width={512}
                 height={512}
-                className="h-12 w-12 md:h-14 md:w-14"
+                className="h-[72px] w-[72px] md:h-[84px] md:w-[84px]"
               />
             </Link>
           </div>
