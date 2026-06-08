@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -42,6 +43,11 @@ export default function RootLayout({
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="bg-bone text-ink font-sans antialiased min-h-screen">
         {children}
+        {/* P5 VisitorID / IDPixel analytics — site-wide visitor identification */}
+        <Script
+          src="https://cdn.idpixel.app/v1/idp-analytics-69bd7936699f22b3db5a92f5.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
