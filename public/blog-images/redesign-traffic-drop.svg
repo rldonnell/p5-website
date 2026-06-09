@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 360" role="img" aria-label="Anonymized backlink and search profile after a botched migration. Domain Rating 36, down 10. URL Rating 6, down 3. Ahrefs Rank 2,164,281, down 1,306,102. Organic keywords 581, down about 1,100. Top 3 rankings 136, down 237. Organic traffic 3,700, down 9,200. Traffic value $721, down $2,300.">
+  <defs>
+    <style>
+      .label { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; fill: #6B6358; }
+      .num   { font-family: Georgia, 'Times New Roman', serif; fill: #14110D; }
+      .delta { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; fill: #6B2A2A; }
+      .hdr   { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; fill: #14110D; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1038" height="358" rx="5" fill="#F0F0EC" stroke="#6B6358" stroke-opacity="0.22" stroke-width="1"/>
+  <line x1="513" y1="40" x2="513" y2="320" stroke="#6B6358" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- ===== Backlink profile ===== -->
+  <text class="hdr" x="48" y="52" font-size="16">Backlink profile</text>
+  <rect x="48" y="64" width="38" height="2" fill="#6B8068"/>
+
+  <text class="label" x="48" y="112" font-size="13" letter-spacing="0.5">DR</text>
+  <text class="num"   x="46" y="172" font-size="54">36</text>
+  <text class="delta" x="128" y="172" font-size="21">&#8722;10</text>
+
+  <text class="label" x="250" y="112" font-size="13" letter-spacing="0.5">UR</text>
+  <text class="num"   x="248" y="172" font-size="54">6</text>
+  <text class="delta" x="292" y="172" font-size="21">&#8722;3</text>
+
+  <text class="label" x="48" y="248" font-size="13" letter-spacing="0.5">AR</text>
+  <text class="num"   x="46" y="288" font-size="30">2,164,281</text>
+  <text class="delta" x="250" y="288" font-size="18">&#9660; 1,306,102</text>
+
+  <!-- ===== Search ===== -->
+  <text class="hdr" x="544" y="52" font-size="16">Search</text>
+  <rect x="544" y="64" width="38" height="2" fill="#6B8068"/>
+
+  <text class="label" x="544" y="112" font-size="13" letter-spacing="0.3">Organic keywords</text>
+  <text class="num"   x="542" y="172" font-size="54">581</text>
+  <text class="delta" x="652" y="172" font-size="21">&#8722;1.1K</text>
+  <text class="label" x="544" y="206" font-size="14">Top 3 <tspan fill="#14110D">136</tspan>  <tspan class="delta">&#8722;237</tspan></text>
+
+  <text class="label" x="788" y="112" font-size="13" letter-spacing="0.3">Organic traffic</text>
+  <text class="num"   x="778" y="172" font-size="54">3.7K</text>
+  <text class="delta" x="902" y="172" font-size="21">&#8722;9.2K</text>
+  <text class="label" x="788" y="206" font-size="14">Value <tspan fill="#14110D">$721</tspan>  <tspan class="delta">&#8722;2.3K</tspan></text>
+</svg>
